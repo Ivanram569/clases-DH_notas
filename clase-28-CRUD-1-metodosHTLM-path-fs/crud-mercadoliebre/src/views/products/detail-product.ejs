@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Include Head -->
+  <%- include('../partials/head', {title: product.name}) %>
+  <body>
+    <!-- Header -->
+    <%- include('../partials/headerNavbar') %>
+    <!-- /Header -->
+
+    <!-- Banner -->
+    <div class="banner"></div>
+    <!-- /Banner -->
+
+    <div class="container products-wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="products-title"><%= product.name %></h2>
+        </div>
+        <!-- Show products with searches by id-->
+        <div class="tamaño-product"><img src="/images/products/<%= product.image %>" alt="imagen del producto"></div>
+        <div><h1 class="w-100"><%= product.description %> </h1></div> 
+        <% if (product.discount) { %>
+            <p class="product-detail-price small">
+                <span>$<%= getPrice(product) %></span>
+                /
+                <b><%= getDiscount(product) %>% OFF</b>
+            </p>
+            <p class="product-detail-price">
+                $<%= getFinalPrice(product) %>
+            </p>
+            <% } else { %>
+            <p class="product-detail-price">
+                $<%= getPrice(product) %>
+            </p>
+            <% } %>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('../partials/footer') %>
+    <!-- /footer -->
+</body>
+</html>

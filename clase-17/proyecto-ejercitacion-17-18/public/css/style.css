@@ -1,0 +1,33 @@
+body{
+    font-family: 'La Belle Aurore', cursive;
+}
+
+h1{
+
+    font-size: 50px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.titulo2{
+    color: blue;
+    border: solid aqua;
+}
+
+.parrafo-destacado{
+    color: salmon;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.parrafo-destacado em{
+    background-color: yellow;
+    font-size: 39px;
+}

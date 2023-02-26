@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="name">Nombre: </label>
+            <input name="name" id="name" type="text">
+            <% if(locals.errors && errors.name){%>
+                <p class="error"><%= error.color.msg %> </p> 
+            <% } %> 
+        </div>
+        <div>
+            <label for="color">Color Favorito:</label>
+            <select name="color" id="color">
+                <option value="red">Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+                <option value="yellow">Amarillo</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email">
+        </div>
+        <div>
+            <label for="birthDate">Fecha de nacimiento:</label>
+            <input name="birthDate" id="birthDate" type="date">
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

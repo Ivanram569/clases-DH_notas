@@ -1,0 +1,49 @@
+[{
+    "id" : 0,
+    "marca" : "Fierce",
+    "modelo" : "FM18SI29AM211",
+    "rodado" : 16,
+    "anio" : 2020,
+    "color" : "Celeste",
+    "pesoKG" : 13,
+    "tipo" : "Montañera",
+    "precio" : 53000,
+    "vendida" : true
+},
+{
+    "id" : 1,
+    "marca" : "Shifter",
+    "modelo" : "F29AM210,AM211",
+    "rodado" : 26,
+    "anio" : 2021,
+    "color" : "Roja",
+    "pesoKG" : 15,
+    "tipo" : "Paseo",
+    "precio" : 53000,
+    "vendida" : true
+},
+{
+    "id" : 2,
+    "marca" : "Olmo",
+    "modelo" : "Regal",
+    "rodado" : 28,
+    "anio" : 2022,
+    "color" : "Amarillo",
+    "pesoKG" : 16,
+    "tipo" : "Retro",
+    "precio" : 53000,
+    "vendida" : false
+},
+{
+    "id" : 3,
+    "marca" : "Sunshine",
+    "modelo" : "FM18SI29AM211",
+    "rodado" : 29,
+    "anio" : 2023,
+    "color" : "Verde",
+    "pesoKG" : 17,
+    "tipo" : "Triatlón",
+    "precio" : 53000,
+    "vendida" : false
+}
+]
